@@ -1,12 +1,14 @@
 import React from 'react';
-
+import aim from '../assets/wht.jpeg'
 function NavBar(){
     return (
         <>
-            <div className='nav-container'>
+        <nav>
+        <div className='nav-container'>
             <div className='navbar'>
                 <div className='logo'>
-                    <img src='' alt='kraft'/>
+                    <img src={aim} alt='kraft'/>
+                    <h1>wekraft</h1>
                 </div>
 
                 <ul className='navlink'>
@@ -26,14 +28,16 @@ function NavBar(){
                         <a href='@' className='link'>contact us</a>
                     </li>
                     <li>
-                        <a href='@' className='link'>Sign-in</a>
+                        <a href='@' className='link btn in'>Sign-in</a>
                     </li>
                     <li>
-                        <a href='@' className='link'>Sign-up</a>
+                        <a href='@' className='link btn up'>Sign-up</a>
                     </li>
                 </ul>
             </div>
             </div>
+        </nav>
+           
         </>
     )
 }
