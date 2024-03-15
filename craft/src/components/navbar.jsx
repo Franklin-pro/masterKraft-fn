@@ -1,5 +1,5 @@
 import React from 'react';
-// import aim from '../assets/wekraft.jpeg'
+import aim from '../assets/wek.jpg'
 function NavBar(){
     return (
         <>
@@ -7,8 +7,7 @@ function NavBar(){
         <div className='nav-container'>
             <div className='navbar'>
                 <div className='logo'>
-                    {/* <img src={aim} alt='kraft'/> */}
-                    <h1>wekraft</h1>
+                    <img src={aim} alt='kraft'/>
                 </div>
 
                 <ul className='navlink'>
@@ -28,10 +27,10 @@ function NavBar(){
                         <a href='@' className='link'>contact us</a>
                     </li>
                     <li>
-                        <a href='@' className='link btn in'>Sign-in</a>
+                        <a href='@' className='link btn in'>Sign-up</a>
                     </li>
                     <li>
-                        <a href='@' className='link btn up'>Sign-up</a>
+                        <a href='@' className='link btn up'>log in</a>
                     </li>
                 </ul>
             </div>
