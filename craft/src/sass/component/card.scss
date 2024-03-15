@@ -40,6 +40,8 @@
             
         }
     }
+
+   
 }
 .cards{
     display: grid;
@@ -49,6 +51,17 @@
     justify-content: center;
     
    
+}
+@media screen and (max-width:1036px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:604px) {
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
 }
 .protection{
     padding: 2rem 10rem;
@@ -87,4 +100,8 @@
         color: #777777;
     }
    }
+}
+
+.protection{
+   padding: 0;
 }
