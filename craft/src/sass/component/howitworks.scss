@@ -1,5 +1,191 @@
 .works-container{
-    background: red;
-    height: 100vh;
+    height: auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 3rem;
+    .works-top{
+        width: 700px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+        h1{
+            font-size: 3rem;
+            font-weight: 800;
+            color:  #002147;
+        }
+        p{
+            font-size: 1.7rem;
+            font-weight: 200;
+            color:  #002147;
+        }
+    }
+    .works-bottom{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        .works-bottom-left{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            .first{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content:end;
+                text-align: right;
+                h1{
+                    font-size: 3rem;
+                    color: #646464;
+                    span{
+                        color: #fdc800;
+                    }
+                }
+                p{
+                    font-size: 2rem;
+                    color: #646464;
+                    font-weight: 300;
+                }
+            }
+            .last{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content:baseline;
+                text-align: left;
+                h1{
+                    font-size: 3rem;
+                    color: #646464;
+                    span{
+                        color: #fdc800;
+                    }
+                }
+                p{
+                    font-size: 2rem;
+                    color: #646464;
+                    font-weight: 300;
+                }
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .works-bottom-center{
+        
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            .first{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content:end;
+                text-align: right;
+                h1{
+                    font-size: 3rem;
+                    color: #646464;
+                    span{
+                        color: #fdc800;
+                    }
+                }
+                p{
+                    font-size: 2rem;
+                    color: #646464;
+                    font-weight: 300;
+                }
+            }
+            .last{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content:baseline;
+                text-align: left;
+                h1{
+                    font-size: 3rem;
+                    color: #646464;
+                    span{
+                        color: #fdc800;
+                    }
+                }
+                p{
+                    font-size: 2rem;
+                    color: #646464;
+                    font-weight: 300;
+                }
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .works-bottom-bottom{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            .last{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content:baseline;
+                text-align: left;
+                h1{
+                    font-size: 3rem;
+                    color: #646464;
+                    span{
+                        color: #fdc800;
+                    }
+                }
+                p{
+                    font-size: 2rem;
+                    color: #646464;
+                    font-weight: 300;
+                }
+            }
+            .first{
+                width: 300px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content:baseline;
+                text-align: right;
+                h1{
+                    font-size: 3rem;
+                    color: #646464;
+                    span{
+                        color: #fdc800;
+                    }
+                }
+                p{
+                    font-size: 2rem;
+                    color: #646464;
+                    font-weight: 300;
+                }
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
 }

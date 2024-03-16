@@ -1,6 +1,8 @@
 import React from "react";
 import Home from "../components/home";
 import CountDown from "../components/coutdown";
+import HowItWorks from "../components/howitworks";
+import Award from "../components/award";
 
 
 const Homes=()=>{
@@ -8,6 +10,8 @@ const Homes=()=>{
         <>
         <Home/>
         <CountDown/>
+        <HowItWorks/>
+        <Award/>
         </>
     )
 }
