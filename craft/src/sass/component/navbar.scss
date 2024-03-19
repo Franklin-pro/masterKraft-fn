@@ -34,9 +34,32 @@ padding: 1.5rem 3rem;
     gap: 2rem;
     list-style: none;
   }
+  .menu{
+    display: none;
+  }
   @media screen and (max-width:900px) {
     .navlink{
         display: none;
+    }
+    .menu{
+        display: flex;
+      }
+    .openNav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+        background-color: rgb(255, 255, 255);
+        left: 0;
+        top: 7.5rem;
+        transition: all .3s ease-out;
+      
+        width: 100%;
+        text-align: center;
+     padding: 2rem;
+        
+    
     }
   }
 .link{

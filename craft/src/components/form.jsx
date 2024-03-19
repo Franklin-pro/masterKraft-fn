@@ -1,11 +1,13 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Button from './button';
 
 
 export default function Form() {
   return (
-    <Box
+    <>
+      <Box
       component="form"
       sx={{
         '& .MuiTextField-root': { m: 1, width: '28ch' },
@@ -67,5 +69,7 @@ export default function Form() {
           className='message'
         />
     </Box>
+    <Button name="contact" backgrounds ='#00043b' textColor='#ffff'/>
+    </>
   );
 }

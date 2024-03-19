@@ -11,7 +11,9 @@ const Card = (props) => {
           </div>
           <div className="text">
           <h3>{props.name}</h3>
+          <h3>{props.teacher}</h3>
             <p>{props.location}</p>
+            <a href={props.youtube} target="blank" className="ank">{props.titles}</a>
           </div>
            
           </div>
