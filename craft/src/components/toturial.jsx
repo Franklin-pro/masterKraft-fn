@@ -1,20 +1,35 @@
 import React from "react";
-import Card from '../components/card';
-import toturial from '../assets/comment.json'
-import NavBar from "./navbar";
+import {DefaultPlayer as Video} from 'react-html5video';
+import 'react-html5video/dist/styles.css'
+import {Link} from 'react-router-dom'
 
 
-function Toturial(){
+
+function Toturial(props){
 return (
     <>
-    <NavBar/>
-           <div className="tot">
-       { toturial ? ( toturial.map((sponsorx)=>(
-        <Card desc={sponsorx.description} photo={sponsorx.newsImage} name = {sponsorx.teacher} youtube= {sponsorx.youtube} titles = 'go to learn this course on  youtube'/>
-    ))):(
-        <p>Loading...</p>
-    )}
+    <div className="video-container">
+    <div className="delay">
+        <div className="videos">
+        <div className="video-card">
+   <div className="video">
+    <Video loop>
+<source src={props.video} type="video/mp4" />
+</Video>
     </div>
+    <div className="video-content">
+<h1>{props.proff}</h1>
+<p>{props.course}</p>
+<Link to={props.youtube} className="youtube" target="blank">go to watch on youtube</Link>
+        </div>
+   </div>
+
+        </div>
+    </div>
+  
+    </div>
+   
+
     </>
 )
 }

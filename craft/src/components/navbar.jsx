@@ -19,7 +19,7 @@ function NavBar(){
                         <a href='@' className='link'>Home</a>
                     </li>
                     <li>
-                        <a href='./toturial' className='link'>Toturial</a>
+                        <a href='./toturial' className='link'>Learn</a>
                     </li>
                     <li>
                         <a href='@' className='link'>The Box</a>

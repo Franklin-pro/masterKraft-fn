@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 .card-container{
     padding: 3rem;
     .card{
@@ -24,7 +26,7 @@
                
                 font-size: 1.9rem;
                 text-transform: capitalize;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-family: "Nunito", sans-serif;
             }
             p{
                 font-size: 1.5rem;  
@@ -75,7 +77,7 @@
    .head{
     text-align: center;
     padding: 3rem 0 3rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 2.5rem;
     font-weight: 400;
     display: flex;
@@ -111,4 +113,83 @@
 
 .protection{
    padding: 0;
+}
+// ------------------------------videocard-------------------------------
+.delay{
+ padding: 3rem 2rem;
+
+
+}
+.videos{
+    display: flex;
+   justify-content: center;
+   gap: 4rem;
+   flex-wrap: wrap;
+  
+}
+.video-card{
+    background-color: rgba(255, 255, 255, 0.507);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
+    width: 300px;
+
+    .video{
+        width: 100%;
+    }
+    .image{
+        width: 300px;
+        height: 200px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .video-content{
+        font-family: "Nunito", sans-serif;
+        padding: 1rem 2rem;
+        margin: 0 30px;
+        h1{
+            color: #fdc800;
+            text-transform: capitalize;
+        }
+        p{
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            font-weight: 400;
+           
+        }
+        .youtube{
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            font-weight: 700;
+            color: #00043b;
+            text-decoration: none;
+        }
+    }
+}
+.did{
+    background-color: rgb(255, 255, 255);
+    padding: 3rem 2rem;
+   .you{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem; 
+    p{
+      padding: 3rem 0;
+        font-size: 1.8rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        font-family: "Nunito", sans-serif;
+    }
+   }
+    .images{
+        width: 500px;
+        height: 500px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
