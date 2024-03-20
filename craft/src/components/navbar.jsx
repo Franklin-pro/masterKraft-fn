@@ -1,6 +1,9 @@
 import React from 'react';
-import aim from '../assets/wht.jpeg'
+import aim from '../assets/wek.jpg';
+import MenuIcon from '@mui/icons-material/Menu';
+import { useState } from 'react';
 function NavBar(){
+    const[isMobile,setIsMobile]= useState(false);
     return (
         <>
         <nav>
@@ -8,15 +11,15 @@ function NavBar(){
             <div className='navbar'>
                 <div className='logo'>
                     <img src={aim} alt='kraft'/>
-                    <h1>wekraft</h1>
                 </div>
 
-                <ul className='navlink'>
+                <ul className={isMobile?'openNav':'navlink'}
+                    onClick={()=>setIsMobile(false)}>
                     <li>
                         <a href='@' className='link'>Home</a>
                     </li>
                     <li>
-                        <a href='@' className='link'>Toturial</a>
+                        <a href='./toturial' className='link'>Learn</a>
                     </li>
                     <li>
                         <a href='@' className='link'>The Box</a>
@@ -28,12 +31,13 @@ function NavBar(){
                         <a href='@' className='link'>contact us</a>
                     </li>
                     <li>
-                        <a href='@' className='link btn in'>Sign-in</a>
+                        <a href='@' className='link btn in'>Sign-up</a>
                     </li>
                     <li>
-                        <a href='@' className='link btn up'>Sign-up</a>
+                        <a href='@' className='link btn up'>log in</a>
                     </li>
                 </ul>
+                <MenuIcon className="menu" onClick = {()=>setIsMobile(!isMobile)} />
             </div>
             </div>
         </nav>
