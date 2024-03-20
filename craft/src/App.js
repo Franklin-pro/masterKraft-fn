@@ -14,9 +14,11 @@ function App() {
     <Routes>
       <Route path="/" element={<Welcome/>}></Route>
       <Route path="/Home" element={<Homes/>} ></Route>
+
       <Route path="/toturial" element={<Learn/>} ></Route>
       <Route path="/tools" element={<TheBox/>} ></Route>
       <Route path="/testimonial" element={<Testmonial/>} ></Route>
+
     </Routes>
    </Router>
   );
