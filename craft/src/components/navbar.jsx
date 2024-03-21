@@ -22,7 +22,7 @@ function NavBar(){
                         <a href='./toturial' className='link'>Learn</a>
                     </li>
                     <li>
-                        <a href='@' className='link'>The Box</a>
+                        <a href='./tools' className='link'>The Box</a>
                     </li>
                     <li>
                         <a href='@' className='link'>about us</a>

@@ -8,6 +8,8 @@ import './sass/main.scss'
 import Learn from "./components/learn";
 import TheBox from "./components/box";
 import Testmonial from "./components/testimonial";
+import DashboardPage from "./pages/dashboards";
+
 function App() {
   return (
    <Router>
@@ -19,6 +21,7 @@ function App() {
       <Route path="/tools" element={<TheBox/>} ></Route>
       <Route path="/testimonial" element={<Testmonial/>} ></Route>
 
+      <Route path="/dashboard" element={<DashboardPage/>}></Route>
     </Routes>
    </Router>
   );
