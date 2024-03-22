@@ -1,9 +1,12 @@
 import React from "react";
+
 const Card = (props) => {
-    
+  
+
+
     return (
         <div className="card-container">
-          <div className="card">
+          <div className="card" >
           <p className="desc">{props.desc}</p>
           <div className="profile">
           <div className="prof">

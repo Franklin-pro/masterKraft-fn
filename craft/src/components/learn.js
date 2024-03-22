@@ -6,18 +6,23 @@ import logan from '../assets/logan.mp4';
 import NavBar from "./navbar";
 import Footer from "./footer";
 import Dids from "./dids";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 function Learn() {
   
-
+    useEffect(()=>{
+        AOS.init({duration:1000})
+      })
     return (
         <>
             <NavBar />
-            <div className="videos">
+            <div className="videos" data-oas='zoom-in'>
                 {learn ? (
                     learn.map((learnx, index) => (
-                        <Toturial key={index} proff={learnx.name} course={learnx.description} video={logan} youtube={learnx.youtube} />
+                        <Toturial key={index} proff={learnx.name} course={learnx.description} video={logan} youtube={learnx.youtube} data-oas='zoom-in'/>
                     ))
                 ) : (
                     <p>Loading...</p>

@@ -2,10 +2,39 @@ import React from 'react';
 import aim from '../assets/wek.jpg';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
+import {Modal} from 'antd';
+import Login from './login';
+
+
+
+
 function NavBar(){
     const[isMobile,setIsMobile]= useState(false);
+
+    const [IsOpen, setIsOpen] = useState(false);
+   
+
+const handleOpen = ()=>{
+    setIsOpen(true)
+}
+const handleClose = () =>{
+    setIsOpen(false)
+}
+
+            
     return (
         <>
+          <Modal open={IsOpen} onCancel={handleClose} footer = {null}>
+  {
+    setIsOpen && (
+                <Login/>
+            )
+
+  }
+
+  </Modal>
+
+
         <nav>
         <div className='nav-container'>
             <div className='navbar'>
@@ -31,10 +60,10 @@ function NavBar(){
                         <a href='@' className='link'>contact us</a>
                     </li>
                     <li>
-                        <a href='@' className='link btn in'>Sign-up</a>
+                    <a href='./signup' className='link btn in'>sign-up</a>
                     </li>
                     <li>
-                        <a href='@' className='link btn up'>log in</a>
+                        <button className='link btn up' onClick={handleOpen}>log in</button>
                     </li>
                 </ul>
                 <MenuIcon className="menu" onClick = {()=>setIsMobile(!isMobile)} />

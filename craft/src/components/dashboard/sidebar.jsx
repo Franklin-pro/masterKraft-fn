@@ -22,8 +22,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import GroupIcon from '@mui/icons-material/Group';
 import GradingIcon from '@mui/icons-material/Grading';
-import DashCard from './dashcard';
-import DashTable from './dashTable';
+
 import { useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
@@ -95,7 +94,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 export default function Dashboard() {
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -147,6 +146,7 @@ const usenavigate = useNavigate();
                justifyContent: open ? 'initial' : 'center',
                px: 2.5,
              }}
+             onClick={()=>{usenavigate("/dashboard")}}
            >
              <ListItemIcon
                sx={{
@@ -167,6 +167,7 @@ const usenavigate = useNavigate();
                justifyContent: open ? 'initial' : 'center',
                px: 2.5,
              }}
+             onClick={()=>{usenavigate("/products")}}
            >
              <ListItemIcon
                sx={{
@@ -187,6 +188,7 @@ const usenavigate = useNavigate();
                justifyContent: open ? 'initial' : 'center',
                px: 2.5,
              }}
+             onClick={()=>{usenavigate("/order")}}
            >
              <ListItemIcon
                sx={{
@@ -197,7 +199,7 @@ const usenavigate = useNavigate();
              >
                 <GradingIcon /> 
              </ListItemIcon>
-             <ListItemText primary="ORDERING" sx={{ opacity: open ? 1 : 0 }} onClick={()=>{usenavigate("/order")}}/>
+             <ListItemText primary="ORDERING" sx={{ opacity: open ? 1 : 0 }}/>
            </ListItemButton>
          </ListItem>
          <ListItem key="ORDERING" disablePadding sx={{ display: 'block' }}>
@@ -264,11 +266,7 @@ const usenavigate = useNavigate();
          </ListItem>
      </List>
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <DrawerHeader />
-        <DashCard/>
-     <DashTable/>
-      </Box>
+     
     </Box>
   );
 }

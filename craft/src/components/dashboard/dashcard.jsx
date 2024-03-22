@@ -11,7 +11,7 @@ function DashCard(){
         <div className="cardx">
         <div className="text">
         <h3>230</h3>
-        <p>USER SEARCHS</p>
+        <p>PRODUCTS</p>
         </div>
         <div className="icons">
         <SearchIcon className="icon"/>
@@ -21,8 +21,8 @@ function DashCard(){
         </div>
         <div className="cardx">
         <div className="text">
-        <h3>230</h3>
-        <p>POST IMPRESSION</p>
+        <h3>100</h3>
+        <p>ORDERS</p>
         </div>
         <div className="icons">
         <BarChartIcon className="icon"/>
@@ -33,7 +33,7 @@ function DashCard(){
         <div className="cardx">
         <div className="text">
         <h3>230</h3>
-        <p>PROFILE VIEWS</p>
+        <p>USERS</p>
         </div>
         <div className="icons">
         <GroupIcon  className="icon"/>

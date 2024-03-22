@@ -1,5 +1,6 @@
 import React from "react";
-import Form from "./form";
+
+import Contacts from "./contactForm";
 
 function Contact(){
 return (
@@ -23,7 +24,7 @@ return (
         </div>
         <div className="contact-right">
         <h3>Complete the form below...</h3>
-        <Form/>
+        <Contacts/>
         
         </div>
         </div>
