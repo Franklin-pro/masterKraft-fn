@@ -9,6 +9,7 @@ import Learn from "./components/learn";
 import TheBox from "./components/box";
 import Testmonial from "./components/testimonial";
 import DashboardPage from "./pages/dashboards";
+import ContactPage from "./components/contact-page";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/testimonial" element={<Testmonial/>} ></Route>
 
       <Route path="/dashboard" element={<DashboardPage/>}></Route>
+      <Route path="/ContactPage" element={<ContactPage/>}></Route>
     </Routes>
    </Router>
   );
