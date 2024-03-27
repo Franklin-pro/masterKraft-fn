@@ -10,6 +10,7 @@ import TheBox from "./components/box";
 import Testmonial from "./components/testimonial";
 import DashboardPage from "./pages/dashboards";
 import ContactPage from "./components/contact-page";
+import About from "./components/about";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
       <Route path="/dashboard" element={<DashboardPage/>}></Route>
       <Route path="/ContactPage" element={<ContactPage/>}></Route>
+      <Route path="/About" element={<About/>}></Route>
     </Routes>
    </Router>
   );
