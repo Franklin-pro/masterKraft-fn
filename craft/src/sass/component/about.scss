@@ -203,9 +203,13 @@
                         @media(max-width:867px){
                             gap: 0;
                         }
+                        @media(max-width:430px){
+                            gap: 1rem;
+                        }
                         @media(max-width:230px){
                             width: auto;
                             height: auto;
+                            gap: 1rem;
                         }
                         .ourTeam-img{
                             width: 100%;
