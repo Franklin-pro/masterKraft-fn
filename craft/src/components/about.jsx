@@ -1,17 +1,16 @@
 import React from "react";
-import photo from "../assets/st.jpg";
 import qt from "../assets/qt.png";
+import team from "../assets/team.jpg";
+import teama from "../assets/teama.png";
+import teamb from "../assets/teamb.png";
+import teamc from "../assets/teamc.png";
+import teamd from "../assets/teamd.png";
 
 const About=()=>{
     return(<>
     <div className="about-container">
         <div className="about-all-content">
             <div className="about-content">
-            <div className="about-content-left">
-                <p>About us.</p>
-                <p>Our team.</p>
-                <p>press.</p>
-            </div>
                 <div className="about-content-right">
                     <h1>ABOUT US.</h1>
                     <p>In today's digital era, where screens often dominate
@@ -33,9 +32,6 @@ const About=()=>{
                        inspire one another. </p>
                 </div>
             </div>
-            <div className="about-image">
-                <img src={photo} alt="" />
-            </div>
             <div className="about-qoute">
                 <div className="qoute-p">
                 <p><i class="fa-solid fa-quote-left"></i>our work does make sense only if it is faithful witnessof his time
@@ -45,20 +41,42 @@ const About=()=>{
                <img src={qt} alt="" />
                </div>
             </div>
-            {/* <div className="about-team">
-            <div className="team-img">
-               <img src={qt} alt="" />
-               <img src={qt} alt="" />
-               <img src={qt} alt="" />
-               </div>
-                <div className="team-p">
+            <div className="ourTeam">
+            <img src={team} alt="" />
+                <div className="ourTeam-div-container">
                     <h1>THE TEAM.</h1>
-                    <div className="team-start">
-
+                    <div className="ourTeam-container">
+                        <div className="ourTeam-card">
+                            <div className="ourTeam-img">
+                            <img src={teama} alt="" />
+                            </div>
+                            <h3>Kagabo Japhet</h3>
+                            <p>Ceo</p>
+                        </div>
+                        <div className="ourTeam-card">
+                            <div className="ourTeam-img">
+                            <img src={teamb} alt="" />
+                            </div>
+                            <h3>Kagabo Japhet</h3>
+                            <p>Ceo</p>
+                        </div>
+                        <div className="ourTeam-card">
+                            <div className="ourTeam-img">
+                            <img src={teamc} alt="" />
+                            </div>
+                            <h3>Kagabo Japhet</h3>
+                            <p>Ceo</p>
+                        </div>
+                        <div className="ourTeam-card">
+                            <div className="ourTeam-img">
+                            <img src={teamd} alt="" />
+                            </div>
+                            <h3>Kagabo Japhet</h3>
+                            <p>Ceo</p>
+                        </div>
                     </div>
                 </div>
-               
-            </div> */}
+            </div>
         </div>
     </div>
     </>)
